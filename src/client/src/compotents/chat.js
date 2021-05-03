@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-
+import '../style.css';
 
 import Messages from "./messages";
 
@@ -48,6 +48,7 @@ const Chat = props => {
   return (
     <div className="chatSection">
       <div className="botContainer">
+          <h1>Your Personal Smart Bot</h1>
         <div className="messagesContainer">
           <Messages messages={responses} />
         </div>
@@ -62,6 +63,7 @@ const Chat = props => {
             placeholder="Say something..."
             className="messageInputField"
           />
+          <button>Send</button>
         </div>
       </div>
     </div>
